@@ -1,0 +1,27 @@
+.kanban-container {
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: var(--shadow);
+    flex-basis: 400px;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .kanban-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kanban-container__cards {
+    margin-top: 16px;
+    display: flex;
+    height: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .kanban-container {
+      padding: 12px;
+    }
+  }
